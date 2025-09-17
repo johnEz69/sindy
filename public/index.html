@@ -64,7 +64,7 @@
       document.getElementById('prompt').value = '';
       agregarMensaje("Sindy está escribiendo...");
 
-      axios.post('http://localhost:3001/chat', { prompt })
+      axios.post('/chat', { prompt })
         .then(res => {
           const texto = res.data.respuesta;
           const ultMensaje = document.querySelector(".ia-message:last-child");
