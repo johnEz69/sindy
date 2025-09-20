@@ -9,6 +9,20 @@
   
 </head>
 <body>
+ <div id="advertencia">
+    <div class="contenido">
+      <h2>⚠ Advertencia</h2>
+      <p>Sindy es una inteligencia artificial creada con fines de entretenimiento. Sus respuestas pueden ser irreverentes, ficticias o exageradas. No deben tomarse en serio ni considerarse consejos reales.
+Los desarrolladores no se hacen responsables por las interpretaciones, reacciones o decisiones tomadas a partir de sus mensajes.
+Al continuar, aceptas interactuar bajo tu propia responsabilidad. </p>
+      <button onclick="cerrarAdvertencia()">Aceptar</button>
+    </div>
+  </div>
+
+ 
+
+
+
   <div class="chat-container">
     <div class="chat-header">SINDY</div>
     <div id="chat-body" class="chat-body"><img src="./image/imagen1.png" alt="Sindy" class="sindy-face-chat"></div>
@@ -91,6 +105,11 @@
     document.getElementById('prompt').addEventListener('keydown', e => {
       if(e.key === 'Enter') enviarPrompt();
     });
+
+
+     function cerrarAdvertencia() {
+      document.getElementById("advertencia").style.display = "none";
+    }
   </script>
 </body>
 </html>

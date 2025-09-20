@@ -188,3 +188,42 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+
+
+
+/* Pantalla de advertencia (ocupa toda la ventana) */
+    #advertencia {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      z-index: 9999;
+    }
+
+    #advertencia .contenido {
+      background: #333;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+    }
+
+    #advertencia button {
+      margin-top: 15px;
+      padding: 8px 15px;
+      background: lightblue;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #advertencia button:hover {
+      background: deepskyblue;
+    }
