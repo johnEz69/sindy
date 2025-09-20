@@ -168,7 +168,7 @@
 }
 
 
-/* CSS */
+/* Tu CSS original */
 footer {
  
   color: white;
@@ -186,8 +186,16 @@ footer a {
 }
 
 footer a:hover {
-  text-decoration: underline;
+  color:#00f;
 }
+
+/* MEDIA QUERY para móviles */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 10px; /* altura del footer para que no lo tape */
+  }
+}
+
 
 
 
